@@ -1,0 +1,7 @@
+*.pyc
+*~
+__pycache__
+env
+photos
+db.sqlite3
+token.txt

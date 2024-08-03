@@ -4,7 +4,7 @@ URL configuration for mySite project.
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/5.0/topics/http/urls/
 Examples:
-Function views
+Function views, i
     1. Add an import:  from my_app import views
     2. Add a URL to urlpatterns:  path('', views.home, name='home')
 Class-based views
@@ -16,7 +16,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-
+from blog.views import index, categ
+ 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('blog/', index),
+    path('cats/', categ),
 ]

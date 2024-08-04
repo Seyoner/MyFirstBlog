@@ -7,5 +7,5 @@ def index(request):
 
 
 
-def categ(request):
-    return HttpResponse('<h1>page</h1>')
+def categ(request, catid):
+    return HttpResponse(f'<h1>Число {catid}</h1>')
